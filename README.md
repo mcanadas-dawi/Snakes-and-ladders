@@ -1,5 +1,6 @@
-# Snakes_and_ladders
-## CodeWars  5kyu Kata
+# SNAKES AND LEADERS
+## CODEWARS 5KYU KATA
+### TAREA
 Tu objetivo es crear una clase  llamada SnakesLadders. Los test llamarán al método play(die1, die2) independientemente del estado del juego o del turno del jugador. Las variables die1 y die2 son el dado lanzado en un turno y ambas son números enteros entre 1 y 6. El jugador moverá la suma de die1 y die2.
 
 ###  REGLAS
@@ -19,7 +20,6 @@ Tu objetivo es crear una clase  llamada SnakesLadders. Los test llamarán al mé
 
 15.  Si el jugador obtuvo un doble y cae en la casilla final “100” sin ningún movimiento restante, entonces el jugador gana el juego y no tiene que volver a tirar.
 
-### RETURN
 
 **¡Return Player n Wins!**. Donde n es el jugador ganador que ha aterrizado en la casilla 100 sin que le queden movimientos restantes.
 
@@ -70,5 +70,5 @@ public class SnakesLadders {
     }
 }
 ```
-#### Aqui os dejo el enclace del Kata por si os apetece probar!
+#### ENLACE AL KATA
 [Snakes_and_Ladders](https://www.codewars.com/kata/587136ba2eefcb92a9000027 "Kata link")

@@ -26,7 +26,7 @@ Tu objetivo es crear una clase  llamada SnakesLadders. Los test llamarán al mé
 **Return ¡Game over!** si un jugador ha ganado y otro jugador intenta jugar.
 
 De lo contrario, **return Player n is on square x**. Donde n es el jugador actual y x es el cuadrado en el que se encuentran actualmente.
-
+### CÓDIGO
 ```java
 public class SnakesLadders {
     static int[] jugadores = new int[]{0,0}; //casilla en la que estara cada jugador

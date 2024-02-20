@@ -29,10 +29,10 @@ De lo contrario, **return Player n is on square x**. Donde n es el jugador actua
 
 ```java
 public class SnakesLadders {
-    static int[] jugadores = new int[]{0,0};
+    static int[] jugadores = new int[]{0,0}; //casilla en la que estara cada jugador
     static int jugador = 0;
     static boolean fin = false;
-    static int[] tablero = new int[]
+    static int[] tablero = new int[] //tablero teniendo en cuenta escaleras y serpientes
         {0,1,38,3,4,5,6,14,31,9,10,
         11,12,13,14,26,6,17,18,19,20,
         42,22,23,24,25,26,27,84,29,30,
@@ -54,16 +54,16 @@ public class SnakesLadders {
             if(fin) return "Game over!";
             String ret = "";
             jugadores[jugador] += die1 + die2;
-            if(jugadores[jugador] > 100) {
+            if(jugadores[jugador] > 100) { //calculo rebote cuando no entro en la última casilla sacando número exacto
             jugadores[jugador] = 200-jugadores[jugador];
             }
-            jugadores[jugador] = tablero[jugadores[jugador]];
+            jugadores[jugador] = tablero[jugadores[jugador]]; //el jugador "x" esta en la casilla "y"
             ret = "Player "+(jugador+1)+" is on square "+jugadores[jugador];
-            if(jugadores[jugador] == 100) {
+            if(jugadores[jugador] == 100) { //ganador
               ret = "Player "+(jugador+1)+" Wins!";
               fin = true;
             }
-            if(die1 != die2){
+            if(die1 != die2){ //cambio de turno
                 jugador = 1-jugador;
             }      
             return ret;
